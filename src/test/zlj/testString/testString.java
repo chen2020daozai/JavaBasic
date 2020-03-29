@@ -44,6 +44,10 @@ public class testString {
         String string5 = string1+"456";
         String string6 = "123"+string2;
         String string7 = string1+string2;
+        String string10 = new String("123456");
+        /*
+        string5 string6 string7 string10构造的底层构造相同
+         */
         final String string11 = "123";
         String string9 = string11+"456";
         System.out.println(string3==string4);

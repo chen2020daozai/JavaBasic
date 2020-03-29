@@ -15,15 +15,18 @@ public class demo2 {
     }
 
     public static int numS(String s1,String s2){
-        int out=0;
         //这样做可以保证不遗漏    如："aaaa"中有两个"aaa"
-        while (s1.length()>=s2.length()){
-            if (s1.startsWith(s2)){
-                out++;
-            }
-            s1=s1.substring(1);
+        if (s1.length()<s2.length()){
+            int out=0;
+            while (s1.length()>=s2.length()){
+                if (s1.startsWith(s2)){
+                    out++;
+                }
+                s1=s1.substring(1);
 
-        }
-        return out;
+            }
+            return out;
+        }else return 0;
+
     }
 }
